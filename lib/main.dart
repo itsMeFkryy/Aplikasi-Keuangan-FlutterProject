@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FinTrack UMKM',
+      title: 'FinGrow UMKM',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         fontFamily: 'Poppins',

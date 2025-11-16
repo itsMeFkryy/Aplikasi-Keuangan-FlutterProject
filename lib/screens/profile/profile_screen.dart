@@ -9,8 +9,8 @@ class ProfileScreen extends StatelessWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Konfirmasi Logout'),
-        content: const Text('Apakah Anda yakin ingin logout?'),
+        title: const Text('Konfirmasi Keluar'),
+        content: const Text('Apakah Anda yakin ingin keluar?'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
@@ -25,7 +25,7 @@ class ProfileScreen extends StatelessWidget {
                 (route) => false,
               );
             },
-            child: const Text('Logout'),
+            child: const Text('Keluar'),
           ),
         ],
       ),
@@ -102,7 +102,7 @@ class ProfileScreen extends StatelessWidget {
                         const Divider(),
                         ListTile(
                           leading: const Icon(Icons.logout, color: Colors.red),
-                          title: const Text('Logout', style: TextStyle(color: Colors.red)),
+                          title: const Text('Keluar', style: TextStyle(color: Colors.red)),
                           onTap: () => _logout(context),
                         ),
                       ],
